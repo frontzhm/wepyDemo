@@ -1,0 +1,44 @@
+<template lang="pug">
+  view
+    navigator(url="./login" hover-class="navigator-hover") 登录{{a}}
+
+</template>
+<script>
+import wepy from 'wepy'
+// import Counter from '../components/counter';
+
+const API_PRE = 'https://api.douban.com'
+const API_FILMS_250 = `${API_PRE}/v2/movie/top250`
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitleText: '首页'
+  }
+  // components = {counter1: Counter};
+  ajaxPoints() {
+    wepy.request({
+      url: API_FILMS_250,
+      header: {
+        'content-type': 'json' // 默认值
+      },
+      success: data => {
+        console.log(data)
+      }
+    })
+  }
+  data = {
+  }
+  methods = {}
+
+  events = {}
+  onLoad() {
+    console.log(0)
+    this.ajaxPoints()
+  }
+  // Other properties
+}
+</script>
+
+
+
+<style lang="scss">
+</style>

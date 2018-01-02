@@ -1,0 +1,24 @@
+{
+  "name": "wepyDemo",
+  "version": "1.0.0",
+  "description": "wepydemo",
+  "main": "index.js",
+  "scripts": {
+    "wepy": "wepy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontzhm/wepyDemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontzhm/wepyDemo/issues"
+  },
+  "homepage": "https://github.com/frontzhm/wepyDemo#readme",
+  "dependencies": {
+    "wepy-cli": "^1.6.0"
+  }
+}
